@@ -108,26 +108,16 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconf="nvim ~/.zshrc"
-alias zsouc="source ~/.zshrc"
+alias omzconf="nvim ~/.oh-my-zsh"
 alias cl="clear"
 alias nf="neofetch"
 alias tx="tmux"
 alias ls="colorls"
 alias la="colorls -la"
 alias lsd="colorls -lda"
-alias python="python3"
-
-# Contour
-export PATH="$HOME/contour/build/src/contour:$PATH"
-
-# Nvim
-export PATH="$HOME/neovim/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/pikaprogram/.sdkman"
-[[ -s "/home/pikaprogram/.sdkman/bin/sdkman-init.sh" ]] && source "/home/pikaprogram/.sdkman/bin/sdkman-init.sh"
+# Neovim
+export PATH=$PATH:/home/pikaprogram/Neovim/build/bin
