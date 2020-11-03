@@ -70,17 +70,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Node Version Manager
-
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm zsh-syntax-highlighting)
+plugins=(git yarn npm zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,12 +107,18 @@ alias omzconf="nvim ~/.oh-my-zsh"
 alias cl="clear"
 alias nf="neofetch"
 alias tx="tmux"
-alias ls="colorls"
-alias la="colorls -la"
-alias lsd="colorls -lda"
+#alias ls="colorls"
+#alias la="colorls -la"
+#alias lsd="colorls -lda"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Neovim
-export PATH=$PATH:/home/pikaprogram/Neovim/build/bin
+#export PATH=$PATH:/home/pikaprogram/Neovim/build/bin
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+#export SDKMAN_DIR="/home/pikaprogram/.sdkman"
+#[[ -s "/home/pikaprogram/.sdkman/bin/sdkman-init.sh" ]] && source "/home/pikaprogram/.sdkman/bin/sdkman-init.sh"
+#export PATH="$HOME/.jenv/bin:$PATH"
+#eval "$(jenv init -)"

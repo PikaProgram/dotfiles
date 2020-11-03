@@ -1,4 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/pikaprogram/.config/nvim'
+let g:netrw_dirhist_7='/home/pikaprogram/.tmux'
+let g:netrw_dirhist_6='/home/pikaprogram'
+let g:netrw_dirhist_5='/home/pikaprogram/Projects/Tutorial'
+let g:netrw_dirhist_4='/home/pikaprogram/Projects'
+let g:netrw_dirhist_3='/home/pikaprogram'
 let g:netrw_dirhist_2='/home/pikaprogram/.config/nvim'
 let g:netrw_dirhist_1='/home/pikaprogram/Projects/randoms/cs'
