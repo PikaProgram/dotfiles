@@ -102,23 +102,39 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconf="nvim ~/.zshrc"
-alias omzconf="nvim ~/.oh-my-zsh"
+alias zshconf="nano ~/.zshrc"
+alias omzconf="nano ~/.oh-my-zsh"
 alias cl="clear"
 alias nf="neofetch"
 alias tx="tmux"
-#alias ls="colorls"
-#alias la="colorls -la"
-#alias lsd="colorls -lda"
+alias ls="colorls"
+alias la="colorls -la"
+alias lsd="colorls -lda"
+alias fcl="fortune -a | cowsay | lolcat"
+alias clion="$HOME/Jetbrains/clion-2021.2.4/bin/clion.sh"
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+export PATH="$HOME/.local/bin:$PATH"
+
+# Aseprite
+export PATH="$HOME/aseprite/build/bin:$PATH"
+
 # Neovim
-#export PATH=$PATH:/home/pikaprogram/Neovim/build/bin
+export PATH="$PATH:$HOME/Neovim/build/bin"
+
+# Java Toolkit
+export PATH="$PATH:$HOME/.java/jdk-15.0.1/bin/"
+export PATH="$HOME/.gradle/gradle-6.7/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 #export SDKMAN_DIR="/home/pikaprogram/.sdkman"
 #[[ -s "/home/pikaprogram/.sdkman/bin/sdkman-init.sh" ]] && source "/home/pikaprogram/.sdkman/bin/sdkman-init.sh"
 #export PATH="$HOME/.jenv/bin:$PATH"
 #eval "$(jenv init -)"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
