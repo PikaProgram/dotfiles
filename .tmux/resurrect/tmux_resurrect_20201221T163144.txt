@@ -1,5 +1,0 @@
-pane	0	0	:[tmux]	1	:*	0	:/home/pika	1	zsh	:
-pane	1	0	:tmux	1	:*	0	:/home/pika	1	tmux	:tmux source .tmux.conf
-window	0	0	1	:*	cafd,120x29,0,0,0
-window	1	0	1	:*	cefe,128x29,0,0,1
-state	1	
