@@ -123,9 +123,6 @@ export PATH="$HOME/.local/bin:$PATH"
 # Aseprite
 export PATH="$HOME/aseprite/build/bin:$PATH"
 
-# Neovim
-export PATH="$PATH:$HOME/Neovim/build/bin"
-
 # Java Toolkit
 export PATH="$PATH:$HOME/.java/jdk-15.0.1/bin/"
 # export PATH="$PATH:$HOME/.java/jre-1.8.0_271/bin/"
@@ -133,9 +130,6 @@ export PATH="$HOME/.gradle/gradle-6.7/bin:$PATH"
 
 # Conda ToolKit
 export PATH="$HOME/anaconda3/bin:$PATH"
-
-# Amulet Game Engine
-export PATH="$HOME/Amulet:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 #export SDKMAN_DIR="/home/pikaprogram/.sdkman"
