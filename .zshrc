@@ -137,5 +137,12 @@ export PATH="$HOME/anaconda3/bin:$PATH"
 #export PATH="$HOME/.jenv/bin:$PATH"
 #eval "$(jenv init -)"
 
+# WSL Setting
+# Make Sure To Start At Home Dir
+cd ~/
+
+# Display GUI
+export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
