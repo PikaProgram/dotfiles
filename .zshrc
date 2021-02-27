@@ -134,12 +134,12 @@ export PATH="$HOME/anaconda3/bin:$PATH"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 #export SDKMAN_DIR="/home/pikaprogram/.sdkman"
 #[[ -s "/home/pikaprogram/.sdkman/bin/sdkman-init.sh" ]] && source "/home/pikaprogram/.sdkman/bin/sdkman-init.sh"
-#export PATH="$HOME/.jenv/bin:$PATH"
-#eval "$(jenv init -)"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 # WSL Setting
 # Make Sure To Start At Home Dir
-cd ~/
+# cd ~/
 
 # Display GUI
 export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
