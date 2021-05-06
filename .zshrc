@@ -111,8 +111,6 @@ alias ls="colorls"
 alias la="colorls -la"
 alias lsd="colorls -lda"
 alias fcl="fortune -a | cowsay | lolcat"
-alias hl="$HOME/Haxelink/hl"
-
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -120,29 +118,9 @@ alias hl="$HOME/Haxelink/hl"
 
 export PATH="$HOME/.local/bin:$PATH"
 
-# Aseprite
-export PATH="$HOME/aseprite/build/bin:$PATH"
-
-# Java Toolkit
-export PATH="$PATH:$HOME/.java/jdk-15.0.1/bin/"
-# export PATH="$PATH:$HOME/.java/jre-1.8.0_271/bin/"
-export PATH="$HOME/.gradle/gradle-6.7/bin:$PATH"
-
-# Conda ToolKit
-export PATH="$HOME/anaconda3/bin:$PATH"
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-#export SDKMAN_DIR="/home/pikaprogram/.sdkman"
-#[[ -s "/home/pikaprogram/.sdkman/bin/sdkman-init.sh" ]] && source "/home/pikaprogram/.sdkman/bin/sdkman-init.sh"
+#Jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
-
-# WSL Setting
-# Make Sure To Start At Home Dir
-# cd ~/
-
-# Display GUI
-export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
